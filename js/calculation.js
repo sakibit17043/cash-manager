@@ -10,7 +10,7 @@ document.getElementById("calculate-button").addEventListener("click",function(){
    const rentValue =getInputValue("rent-input");
    const clothesValue =getInputValue("clothes-input");
    const totalExpenses =document.getElementById("total-expenses");
-   totalExpensesValue =foodValue+rentValue+clothesValue;
+   const totalExpensesValue =foodValue+rentValue+clothesValue;
    totalExpenses.innerText=totalExpensesValue;
    // balance calculation 
    const balance =incomeValue -totalExpensesValue;
@@ -18,6 +18,15 @@ document.getElementById("calculate-button").addEventListener("click",function(){
 
 })
 // save button event handle 
-document.getElementById("save-input").addEventListener("click",function(){
-   const saveValue =document.getElementById("")
+document.getElementById("save-button").addEventListener("click",function(){
+   const saveValueText =document.getElementById("save-input").value;
+   const savevalueNumber =parseFloat(saveValueText)
+   const savingPercentage =savevalueNumber/100;
+   const incomeAmount =getInputValue("income-input");
+   const savingAmount =savingPercentage*incomeAmount;
+   document.getElementById("saving-amount").innerText=savingAmount;
+
+
+
+
 })
