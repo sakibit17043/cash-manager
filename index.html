@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cash Manager</title>
     <!-- bootstrap link  -->
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
 
 </head>
 <body>
@@ -25,26 +25,27 @@
                 <div class="text-center">
                     <!-- income field  -->
                     <h3>Income</h3>
-                <p>Income: <input type="text"></p>
+                <p>Income: <input id="income-input" type="text"></p>
                 <!-- Expense field  -->
                 <p><h3>Expenses</h3></p>
-                <p>Food: <input type="text"></p>
-                <p>Rent: <input type="text"></p>
-                <p>Clothes: <input type="text"></p>
-                <button class="bg-primary text-white px-5 py-1 my-3  border-primary  rounded">Calculate</button>
-                    <h3>Total Expenses:<span>0</span> </h3>
-                    <h3>Balance:<span>0</span> </h3>
+                <p>Food: <input id="food-input" type="text"></p>
+                <p>Rent: <input id="rent-input" type="text"></p>
+                <p>Clothes: <input id="clothes-input" type="text"></p>
+                <button id="calculate-button" class="bg-primary text-white px-5 py-1 my-3  border-primary  rounded">Calculate</button>
+                    <h3 id="total-expense">Total Expenses:<span>0</span> </h3>
+                    <h3 id="balance">Balance:<span>0</span> </h3>
                     <!-- saving field  -->
-                    <p>Save: <input type="text"> % <button class="bg-primary mt-3 text-white px-5 py-1 border-primary rounded">Save</button>
+                    <p>Save: <input id="save-input" type="text"> % <button id="save-button" class="bg-primary mt-3 text-white px-5 py-1 border-primary rounded">Save</button>
                     </p>
-                    <h3>Saving Amount:<span>0</span> </h3>
-                    <h3>Remaining Balance:<span>0</span> </h3>
+                    <h3 id="saving-amount">Saving Amount:<span>0</span> </h3>
+                    <h3 id="remaining-balance">Remaining Balance:<span>0</span> </h3>
                 </div>
 
             </div>
            
         </section>
     </main>
-    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="js/calculation.js"></script>
 </body>
 </html>
