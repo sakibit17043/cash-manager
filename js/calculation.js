@@ -25,6 +25,14 @@ document.getElementById("save-button").addEventListener("click",function(){
    const incomeAmount =getInputValue("income-input");
    const savingAmount =savingPercentage*incomeAmount;
    document.getElementById("saving-amount").innerText=savingAmount;
+   // remaining balance calculation 
+   const balanceText =document.getElementById("balance").innerText;
+   const balanceAmount =parseFloat(balanceText);
+   const reminingBalanceAmount =balanceAmount -savingAmount;
+   document.getElementById("remaining-balance").innerText=reminingBalanceAmount;
+
+
+
 
 
 
